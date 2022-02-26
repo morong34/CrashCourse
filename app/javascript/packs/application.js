@@ -7,6 +7,11 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import 'materialize-css/dist/js/materialize'
+document.addEventListener("turbolinks:load", function() {
+  $(".dropdown-trigger").dropdown();
+  $('.sidenav').sidenav();
+});
 
 Rails.start()
 Turbolinks.start()
